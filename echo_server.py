@@ -18,7 +18,7 @@ def main():
         #listen forever for connections
         while True:
             conn, addr = s.accept() #accept incoming connections
-           
+            print(addr)
             full_data = b""
             while True:
                 data = conn.recv(BUFFER_SIZE)
